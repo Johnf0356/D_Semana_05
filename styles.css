@@ -1,0 +1,62 @@
+body{
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  padding: 20px;
+}
+
+h1{
+  margin-bottom: 15px;
+}
+
+/* Controles */
+.controls{
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input{
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button{
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+#btnDelete{
+  background: #dc2626;
+}
+
+/* Galería */
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.gallery img{
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+/* Imagen seleccionada */
+.gallery img.selected{
+  border: 3px solid #2563eb;
+}
